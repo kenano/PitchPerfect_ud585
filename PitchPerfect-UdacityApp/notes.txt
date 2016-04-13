@@ -1,0 +1,2 @@
+- Add image asstets for buttons in Assets.xcassets. Link UIButtons to these images, remove text, fix auto layout issues, remove color backgrounds.
+- create method viewWillAppear were we will initialize viewcontroller properties.
