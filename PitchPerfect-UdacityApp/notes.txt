@@ -1,4 +1,13 @@
-- Added code in viewcontroller recordAudio, stopRecording buttons to enable/disable buttons.
+
+- Add UINavigationContoller, this implements a stack like structure to navigate through different viewcontrollers. Embed the current (record) View
+Controller inside of a UINavigationContoller.
+- add a new viewcontroller.
+Drag a new VIewController to the right of the record view controller. select the element which should initiate the transition, the Stop button.
+CNTRL + DRAG to the new ViewController. Finally select the Show segue from the popup menu.
+- Rename the record view controller to RecordSoundViewController.
 ----------------------------------------------
 - Add image asstets for buttons in Assets.xcassets. Link UIButtons to these images, remove text, fix auto layout issues, remove color backgrounds.
 - create method viewWillAppear were we will initialize viewcontroller properties.
+----------------------------------------------
+- Added code in viewcontroller recordAudio, stopRecording buttons to enable/disable buttons.
+----------------------------------------------

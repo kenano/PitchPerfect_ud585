@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7214BBDC1CBDC4FD006D0667 /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7214BBDB1CBDC4FD006D0667 /* notes.txt */; };
 		7227EAB11CBC312C008B59BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227EAB01CBC312C008B59BD /* AppDelegate.swift */; };
-		7227EAB31CBC312C008B59BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227EAB21CBC312C008B59BD /* ViewController.swift */; };
+		7227EAB31CBC312C008B59BD /* RecordSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7227EAB21CBC312C008B59BD /* RecordSoundViewController.swift */; };
 		7227EAB61CBC312C008B59BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB41CBC312C008B59BD /* Main.storyboard */; };
 		7227EAB81CBC312C008B59BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB71CBC312C008B59BD /* Assets.xcassets */; };
 		7227EABB1CBC312C008B59BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB91CBC312C008B59BD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7214BBDB1CBDC4FD006D0667 /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
 		7227EAAD1CBC312C008B59BD /* PitchPerfect-UdacityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PitchPerfect-UdacityApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7227EAB01CBC312C008B59BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7227EAB21CBC312C008B59BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7227EAB21CBC312C008B59BD /* RecordSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundViewController.swift; sourceTree = "<group>"; };
 		7227EAB51CBC312C008B59BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7227EAB71CBC312C008B59BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7227EABA1CBC312C008B59BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				7227EAB01CBC312C008B59BD /* AppDelegate.swift */,
-				7227EAB21CBC312C008B59BD /* ViewController.swift */,
+				7227EAB21CBC312C008B59BD /* RecordSoundViewController.swift */,
 				7227EAB41CBC312C008B59BD /* Main.storyboard */,
 				7227EAB71CBC312C008B59BD /* Assets.xcassets */,
 				7227EAB91CBC312C008B59BD /* LaunchScreen.storyboard */,
 				7227EABC1CBC312C008B59BD /* Info.plist */,
+				7214BBDB1CBDC4FD006D0667 /* notes.txt */,
 			);
 			path = "PitchPerfect-UdacityApp";
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7214BBDC1CBDC4FD006D0667 /* notes.txt in Resources */,
 				7227EABB1CBC312C008B59BD /* LaunchScreen.storyboard in Resources */,
 				7227EAB81CBC312C008B59BD /* Assets.xcassets in Resources */,
 				7227EAB61CBC312C008B59BD /* Main.storyboard in Resources */,
@@ -135,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7227EAB31CBC312C008B59BD /* ViewController.swift in Sources */,
+				7227EAB31CBC312C008B59BD /* RecordSoundViewController.swift in Sources */,
 				7227EAB11CBC312C008B59BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				7227EAC11CBC312C008B59BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
