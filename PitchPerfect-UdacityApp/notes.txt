@@ -1,4 +1,6 @@
-
+----------------------------------------------
+- Add code to RecordViewController to record audio and related stop recording code. Both of these Actions are invoke from the buttons.
+    -AVAudioRecorder is used to record audio
 - Add UINavigationContoller, this implements a stack like structure to navigate through different viewcontrollers. Embed the current (record) View
 Controller inside of a UINavigationContoller.
 - add a new viewcontroller.

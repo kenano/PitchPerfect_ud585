@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RecordSoundViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class RecordSoundViewController: UIViewController {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
     
+    //class which handles audio functionality like recording.
+    //the ! means this is an implcitly unwrapped optional.
+    var audioRecorder:AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,36 @@ class RecordSoundViewController: UIViewController {
         //enable/disable buttons
         stopRecordingButton.enabled = true
         recordButton.enabled = false
+        
+        //get the apps document directory to build the directory path to store the recorded file. store it in a String.
+        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)[0] as String
+        
+        //filename for recording.
+        let recordingName = "recordedVoice.wav"
+        
+        //create an array with the path and filename.
+        let pathArray = [dirPath, recordingName]
+        
+        //create a NSURL path and print it.
+        let filePath = NSURL.fileURLWithPathComponents(pathArray)
+        print(filePath)
+        
+        //get an instance of AVAudioSession
+        //sharedInstance() is a common design pattern is ios for accessing a singelton
+        //AVAudioSession is an abstraction over the audio hardware. since there is only one
+        //audio hardware for the device there is only once instance of AVAudioSession
+        let session = AVAudioSession.sharedInstance()
+        
+        //set up the audio session.  no error handeling if it fails.
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+        
+        //set up the recorder. again no error handeling.
+        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        audioRecorder.meteringEnabled = true
+        
+        //record
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
     }
     
     @IBAction func stopRecording(sender: AnyObject) {
@@ -50,6 +84,15 @@ class RecordSoundViewController: UIViewController {
         //enable/disable buttons
         stopRecordingButton.enabled = false
         recordButton.enabled = true
+        
+        //stop audio recording
+        audioRecorder.stop()
+        
+        //get an instance of AVAudioSession
+        let audioSession = AVAudioSession.sharedInstance()
+        
+        //close audiosession
+        try! audioSession.setActive(false)
     }
     
 }
