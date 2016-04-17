@@ -13,6 +13,7 @@
 		7227EAB61CBC312C008B59BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB41CBC312C008B59BD /* Main.storyboard */; };
 		7227EAB81CBC312C008B59BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB71CBC312C008B59BD /* Assets.xcassets */; };
 		7227EABB1CBC312C008B59BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7227EAB91CBC312C008B59BD /* LaunchScreen.storyboard */; };
+		722CDE281CC41B6600700768 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CDE271CC41B6600700768 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7227EAB71CBC312C008B59BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7227EABA1CBC312C008B59BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7227EABC1CBC312C008B59BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		722CDE271CC41B6600700768 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7227EAB91CBC312C008B59BD /* LaunchScreen.storyboard */,
 				7227EABC1CBC312C008B59BD /* Info.plist */,
 				7214BBDB1CBDC4FD006D0667 /* notes.txt */,
+				722CDE271CC41B6600700768 /* PlaySoundsViewController.swift */,
 			);
 			path = "PitchPerfect-UdacityApp";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7227EAB31CBC312C008B59BD /* RecordSoundViewController.swift in Sources */,
+				722CDE281CC41B6600700768 /* PlaySoundsViewController.swift in Sources */,
 				7227EAB11CBC312C008B59BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

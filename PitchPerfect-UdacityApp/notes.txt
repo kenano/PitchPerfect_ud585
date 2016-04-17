@@ -1,4 +1,9 @@
 ----------------------------------------------
+- Make RecordSoundViewController a delegate of AVAudioRecorderDelegate.
+    - Override audioRecorderDidFinishRecording. Add code so segue will be performed only after audio was successfully saved.
+- Create a new ViewController class PlaySoundsViewController
+    - Change the class name of the ViewController class to PlaySoundsViewController (what we just created)in the story board.
+----------------------------------------------
 - Add code to RecordViewController to record audio and related stop recording code. Both of these Actions are invoke from the buttons.
     -AVAudioRecorder is used to record audio
 - Add UINavigationContoller, this implements a stack like structure to navigate through different viewcontrollers. Embed the current (record) View
