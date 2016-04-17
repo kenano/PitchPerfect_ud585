@@ -101,8 +101,9 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
+        //this class is a delegate of AVAudioRecorderDelegate. implement this method to execute 
+        //code once recording has been successfully saved. In this case segue to next ViewController.
         
-        //
         print("AVAudioRecorder has finshed recording.")
         
         if(flag){
@@ -111,6 +112,30 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
             print("Recording save failed.");
         }
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //this functions is executed before ViewController transitions to the next
+        //one. In this class this can happpen when performSegueWithIdentifier
+        //in audioRecorderDidFinishRecording. 
+        //This is were we can set objects to be transfered to the next ViewController.
+        //this is done with "sender" argument.
+        
+        //execute code based on the specific segue
+        if(segue.identifier == "stopRecording"){
+            
+            //get the view controller transitioning to. destinationViewController returns 
+            //UIViewcontroller but since we know its specific child, we can downcast.
+            //this is what "as!" does.
+            let playSoundsVC = segue.destinationViewController as! PlaySoundsViewController
+            
+            //get the URL we passed to performSegueWithIdentifier
+            let recordedAudioURL = sender as! NSURL
+            
+            //set the URL for the recorded audio in the ViewController being
+            //transitioned to.
+            playSoundsVC.recordedAudioURL = recordedAudioURL
+        }
     }
     
 }

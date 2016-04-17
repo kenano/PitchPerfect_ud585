@@ -1,4 +1,7 @@
 ----------------------------------------------
+- Implemented prepareForSegue. This allows us to trasfer the NSURL obj to the ViewController being transitioned to. (PlaySoundsViewController).
+
+----------------------------------------------
 - Make RecordSoundViewController a delegate of AVAudioRecorderDelegate.
     - Override audioRecorderDidFinishRecording. Add code so segue will be performed only after audio was successfully saved.
 - Create a new ViewController class PlaySoundsViewController
