@@ -1,4 +1,13 @@
 ----------------------------------------------
+- Add images for buttons in PlayViewController.
+- Create StackViews to contain buttons in PlaySoundsViewController.
+    - Create VerticalStackView which takes up entire ViewController. This is done by setting autolayout
+        constraints. Modify the constants in the constraints so that the StackView takes up the entire
+        ViewContoller. Set the attributes for the StackView.
+
+    - Add horizontal StackViews to the VerticalStackView. Set its attributes. Add buttons to these
+        StackViews.
+----------------------------------------------
 - Implemented prepareForSegue. This allows us to trasfer the NSURL obj to the ViewController being transitioned to. (PlaySoundsViewController).
 
 ----------------------------------------------
