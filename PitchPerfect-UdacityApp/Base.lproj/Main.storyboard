@@ -83,14 +83,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="SnailButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="3ff-Fe-X1W"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="AE2-IY-78q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uit-pf-6k5" userLabel="RabbitButton">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uit-pf-6k5" userLabel="RabbitButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="RabbitButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="Fy4-is-cog"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="aIz-55-6gG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -98,18 +98,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9JG-ER-ReC">
                                         <rect key="frame" x="0.0" y="134" width="560" height="134"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-0r-nGQ" userLabel="ChipmunkButton">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-0r-nGQ" userLabel="ChipmunkButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="ChipmunkButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="YTh-4k-dc1"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="xmA-8N-TJo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-QR-bbe" userLabel="VaderButton">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIC-QR-bbe" userLabel="VaderButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="DarthVaderButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="FlN-iu-Lo0"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="1UW-Ih-ZSR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -117,18 +117,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="97B-OL-BhK">
                                         <rect key="frame" x="0.0" y="268" width="560" height="134"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfJ-fF-aQd" userLabel="EchoButton">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfJ-fF-aQd" userLabel="EchoButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="EchoButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="nlh-4T-r22"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="vRD-Yh-6si"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n85-OL-BUJ" userLabel="ReverbButton">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n85-OL-BUJ" userLabel="ReverbButton">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
                                                 <state key="normal" image="ReverbButton"/>
                                                 <connections>
-                                                    <action selector="playSoundForButton" destination="rd7-J3-SqN" eventType="touchUpInside" id="YNE-nG-RY2"/>
+                                                    <action selector="playSoundForButton:" destination="rd7-J3-SqN" eventType="touchUpInside" id="j2W-RJ-IzI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -140,7 +140,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="134"/>
                                                 <state key="normal" image="stopRecordingButton"/>
                                                 <connections>
-                                                    <action selector="stopButtonPressed" destination="rd7-J3-SqN" eventType="touchUpInside" id="OK1-Es-2Rj"/>
+                                                    <action selector="stopButtonPressed" destination="rd7-J3-SqN" eventType="touchUpInside" id="R6o-1q-RK2"/>
                                                 </connections>
                                             </button>
                                         </subviews>

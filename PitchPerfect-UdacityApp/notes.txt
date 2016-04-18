@@ -1,4 +1,12 @@
 ----------------------------------------------
+- Add extension file to PlaySoundsViewController that will add audio playback/manipulation.
+- Give each audio manipulation button a Tag id so that each can be identified by ViewController.
+- Add properties to PlaySoundsViewController used for audio playback/manipulation.
+    - this includes an enumeration used by a switch statement to distinguish which audio playback button was pressed.
+- Add playsound function calls based on which button was pressed.
+- add stopaudio functionality to stopButtonPressed Action.
+- call configureUI to enable/disable ui buttons based on app state.
+----------------------------------------------
 - Create IBOutlets and IBActions in PlaySoundsViewController.
     -Bind these to the corresponding elements in the storyboard.
 ----------------------------------------------
