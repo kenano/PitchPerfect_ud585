@@ -13,6 +13,14 @@ class PlaySoundsViewController: UIViewController {
     //path to the recorded file.
     var recordedAudioURL: NSURL!
 
+    @IBOutlet weak var snailButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var rabbitButton: UIButton!
+    @IBOutlet weak var vaderButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    @IBOutlet weak var reverbButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +32,13 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func playSoundForButton(){
+        print("play sound button pressed")
+    }
+    
+    @IBAction func stopButtonPressed(){
+        print("stop audio button pressed")
+    }
 
     /*
     // MARK: - Navigation

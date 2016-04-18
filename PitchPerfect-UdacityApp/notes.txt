@@ -1,4 +1,7 @@
 ----------------------------------------------
+- Create IBOutlets and IBActions in PlaySoundsViewController.
+    -Bind these to the corresponding elements in the storyboard.
+----------------------------------------------
 - Add images for buttons in PlayViewController.
 - Create StackViews to contain buttons in PlaySoundsViewController.
     - Create VerticalStackView which takes up entire ViewController. This is done by setting autolayout
